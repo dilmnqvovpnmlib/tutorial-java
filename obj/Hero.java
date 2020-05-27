@@ -1,8 +1,9 @@
 public class Hero {
-    String name = "";
-    int hp;
+    private String name = "";
+    private int hp;
     Sword sword;
 
+    // constructor
     public Hero(String string) {
         this.name = string;
         this.hp = 100;
@@ -10,6 +11,16 @@ public class Hero {
 
     public Hero() {
         this("テスト");
+    }
+
+    // getter
+    public String getName() {
+        return this.name;
+    }
+
+    // setter
+    public void setHp(int hp) {
+        this.hp += hp;
     }
 
     public void attack(Matango matango) {

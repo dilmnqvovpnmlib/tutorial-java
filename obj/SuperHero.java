@@ -3,7 +3,7 @@ public class SuperHero extends Hero {
 
     @Override
     public void run() {
-        System.out.println(String.format("%sは、撤退した！", this.name));
+        System.out.println(String.format("%sは、撤退した！", this.getName()));
     }
 
     @Override
@@ -11,7 +11,7 @@ public class SuperHero extends Hero {
         super.attack(matango);
         if (this.flying) {
             super.attack(matango);
-            System.out.println(String.format("スーパーヒーロー %sは二倍のダメージを与えた！", super.name));
+            System.out.println(String.format("スーパーヒーロー %sは二倍のダメージを与えた！", super.getName()));
         }
     }
 
